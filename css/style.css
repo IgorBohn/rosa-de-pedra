@@ -4,11 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .header {
-  background: #FEDCE0;
+  background: #fedce0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,19 +34,48 @@
 }
 
 .header nav .menu a {
-  color: #FA867E;
+  color: #fa867e;
   padding: 0px 40px;
   font-weight: 500;
   font-size: 16px;
 }
 
 .header nav .menu .fale-conosco {
-  color: #F00F10;
+  color: #f00f10;
   padding: 15px 40px;
-  border: 2px solid #F00F10;
+  border: 2px solid #f00f10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
   margin-left: 40px;
+}
+
+.main {
+  background: #fedce0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main div h1 {
+  font-weight: 700px;
+  font-size: 74px;
+  color: #fa867e;
+  margin: 80px 60px 10px 140px;
+}
+
+.main div a {
+  font-weight: 700px;
+  font-size: 16px;
+  color: #f00f10;
+  margin-left: 140px;
+}
+
+.main img {
+  width: 590px;
+  height: 475px;
 }
 /*# sourceMappingURL=style.css.map */
