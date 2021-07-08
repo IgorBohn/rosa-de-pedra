@@ -4,5 +4,49 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.header {
+  background: #FEDCE0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo {
+  width: 147px;
+  height: 73px;
+}
+
+.header nav .menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header nav .menu a {
+  color: #FA867E;
+  padding: 0px 40px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.header nav .menu .fale-conosco {
+  color: #F00F10;
+  padding: 15px 40px;
+  border: 2px solid #F00F10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */
