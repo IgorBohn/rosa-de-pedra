@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
 
+
     .logo {
         width: 147px;
         height: 73px;
@@ -42,6 +43,8 @@
     }
 }
 
+// Main //
+
 .main {
     background: #fedce0;
     display: flex;
@@ -65,5 +68,39 @@
     img {
         width: 590px;
         height: 475px;
+    }
+}
+
+// Quem Somos //
+
+.quem-somos {
+    background: #F9F7FF;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        h1 {
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 38px;
+            color: #FA867E;
+            margin: 80px 60px 10px 140px;
+        }
+
+        .paragrafo {
+            color: #574E4E;
+            font-size: 18px;
+            line-height: 35px;
+
+            padding: 40px 140px 20px 140px;
+        }
+    }
+
+    img {
+        width: 429px;
+        height: 601px;
+        border-radius: 30px;
+
+        margin: 180px 40px 40px 80px;
     }
 }
