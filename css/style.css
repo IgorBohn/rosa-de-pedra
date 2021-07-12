@@ -110,4 +110,48 @@
   border-radius: 30px;
   margin: 180px 40px 40px 80px;
 }
+
+.produtos {
+  background: #FEDCE0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.produtos .div-esquerda h1 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FA867E;
+  margin: 0px 60px 10px 140px;
+}
+
+.produtos .div-esquerda img {
+  width: 392px;
+  height: 500px;
+  margin: 120px 60px 140px 160px;
+}
+
+.produtos .div-direita {
+  padding-top: 230px;
+}
+
+.produtos .div-direita h2 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #FA867E;
+  margin: 20px 210px 20px 50px;
+}
+
+.produtos .div-direita .paragrafo {
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 35px;
+  color: #574E4E;
+  margin: 20px 210px 20px 50px;
+}
 /*# sourceMappingURL=style.css.map */
