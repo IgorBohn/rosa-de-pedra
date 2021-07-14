@@ -26,21 +26,21 @@
   height: 73px;
 }
 
-.header nav .menu {
+.header .menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header nav .menu a {
+.header .menu a {
   color: #fa867e;
   padding: 0px 40px;
   font-weight: 500;
   font-size: 16px;
 }
 
-.header nav .menu .fale-conosco {
+.header .menu .fale-conosco {
   color: #f00f10;
   padding: 15px 40px;
   border: 2px solid #f00f10;
@@ -80,7 +80,7 @@
 }
 
 .quem-somos {
-  background: #F9F7FF;
+  background: #f9f7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,16 +89,25 @@
           justify-content: space-between;
 }
 
-.quem-somos div h1 {
+.quem-somos div h3 {
   font-weight: normal;
   font-size: 32px;
   line-height: 38px;
-  color: #FA867E;
+  color: #fa867e;
   margin: 80px 60px 10px 140px;
 }
 
+.quem-somos div h3::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: #f00f10;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .quem-somos div .paragrafo {
-  color: #574E4E;
+  color: #574e4e;
   font-size: 18px;
   line-height: 35px;
   padding: 40px 140px 20px 140px;
@@ -112,7 +121,7 @@
 }
 
 .produtos {
-  background: #FEDCE0;
+  background: #fedce0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,11 +130,11 @@
           justify-content: space-between;
 }
 
-.produtos .div-esquerda h1 {
+.produtos .div-esquerda h3 {
   font-weight: normal;
   font-size: 32px;
   line-height: 38px;
-  color: #FA867E;
+  color: #fa867e;
   margin: 0px 60px 10px 140px;
 }
 
@@ -139,11 +148,11 @@
   padding-top: 230px;
 }
 
-.produtos .div-direita h2 {
+.produtos .div-direita h4 {
   font-weight: bold;
   font-size: 26px;
   line-height: 29px;
-  color: #FA867E;
+  color: #fa867e;
   margin: 20px 210px 20px 50px;
 }
 
@@ -151,25 +160,25 @@
   font-weight: normal;
   font-size: 21px;
   line-height: 35px;
-  color: #574E4E;
+  color: #574e4e;
   margin: 20px 210px 20px 50px;
 }
 
 .perguntas-frequentes {
-  background: #F9F7FF;
+  background: #f9f7ff;
 }
 
-.perguntas-frequentes h1 {
+.perguntas-frequentes h3 {
   font-weight: normal;
   font-size: 32px;
   line-height: 38px;
-  color: #FA867E;
+  color: #fa867e;
   margin: 0px 60px 10px 140px;
   padding: 140px 0px 80px 0px;
 }
 
 .perguntas-frequentes div {
-  border: 2px solid #F00F10;
+  border: 2px solid #f00f10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
@@ -181,14 +190,58 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 35px;
-  color: #574E4E;
-  margin-bottom: 40px;
+  color: #574e4e;
 }
 
 .perguntas-frequentes div .resposta {
   font-weight: normal;
   font-size: 18px;
   line-height: 35px;
-  color: #574E4E;
+  color: #574e4e;
+  margin-top: 40px;
+  display: none;
+}
+
+.perguntas-frequentes div:last-child {
+  margin-bottom: 80px;
+}
+
+.newsletter {
+  background: #fedce0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 140px 40px 140px;
+}
+
+.newsletter div {
+  margin-right: 140px;
+}
+
+.newsletter div p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #574e4e;
+}
+
+.newsletter div h3 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #574e4e;
+}
+
+.newsletter form input {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #231f1f;
+  background: #fedce0;
+  border-bottom: 1px solid #231f1f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 40px 20px 0px 0px;
 }
 /*# sourceMappingURL=style.css.map */
