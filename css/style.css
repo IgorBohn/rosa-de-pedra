@@ -242,6 +242,14 @@
   border-top: none;
   border-left: none;
   border-right: none;
+  padding-bottom: 10px;
   margin: 40px 20px 0px 0px;
+}
+
+.newsletter form input:last-child {
+  font-size: 18px;
+  line-height: 22px;
+  color: #F00F10;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
