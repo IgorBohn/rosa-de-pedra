@@ -311,4 +311,29 @@
           filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
   margin-top: 120px;
 }
+
+.footer {
+  background: #FA867E;
+  height: 433px;
+  padding: 120px 40px;
+}
+
+.footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer p {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
