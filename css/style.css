@@ -252,4 +252,48 @@
   color: #F00F10;
   border: none;
 }
+
+.fale-conosco {
+  background: #F9F7FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 140px 20px 80px 140px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fale-conosco div h3 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fa867e;
+  margin: 0px 0px 80px 0px;
+}
+
+.fale-conosco div .form input {
+  display: block;
+  margin-bottom: 30px;
+  width: 560px;
+  height: 60px;
+  background: #F9E5EC;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #231F1F;
+  padding: 0px 20px;
+}
+
+.fale-conosco div .form .mensagem {
+  height: 286px;
+}
+
+.fale-conosco img {
+  width: 628px;
+  height: 616px;
+  -webkit-filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
+          filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
+}
 /*# sourceMappingURL=style.css.map */
