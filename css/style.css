@@ -7,6 +7,23 @@
   font-family: "Exo 2", sans-serif;
 }
 
+.title-section {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FA867E;
+}
+
+.title-section::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: #f00f10;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .header {
   background: #fedce0;
   display: -webkit-box;
@@ -67,6 +84,15 @@
   margin: 80px 60px 10px 140px;
 }
 
+.main div h1::after {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: #f00f10;
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .main div a {
   font-weight: 700px;
   font-size: 16px;
@@ -87,30 +113,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.quem-somos div h3 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
-  color: #fa867e;
-  margin: 80px 60px 10px 140px;
-}
-
-.quem-somos div h3::before {
-  content: "";
-  height: 6px;
-  width: 6px;
-  background: #f00f10;
-  display: inline-block;
-  margin-right: 10px;
+  padding: 140px 0px 0px 140px;
 }
 
 .quem-somos div .paragrafo {
   color: #574e4e;
   font-size: 18px;
   line-height: 35px;
-  padding: 40px 140px 20px 140px;
+  padding: 40px 140px 20px 0px;
 }
 
 .quem-somos img {
@@ -128,20 +138,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.produtos .div-esquerda h3 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
-  color: #fa867e;
-  margin: 0px 60px 10px 140px;
+  padding: 0px 0px 0px 140px;
 }
 
 .produtos .div-esquerda img {
   width: 392px;
   height: 500px;
-  margin: 120px 60px 140px 160px;
+  margin: 120px 60px 140px 0px;
 }
 
 .produtos .div-direita {
@@ -166,15 +169,8 @@
 
 .perguntas-frequentes {
   background: #f9f7ff;
-}
-
-.perguntas-frequentes h3 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
-  color: #fa867e;
-  margin: 0px 60px 10px 140px;
-  padding: 140px 0px 80px 0px;
+  padding-bottom: 80px;
+  padding: 140px 0px 80px 140px;
 }
 
 .perguntas-frequentes div {
@@ -182,7 +178,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
-  margin: 30px 460px 0px 140px;
+  margin: 30px 460px 0px 0px;
   padding: 30px 60px 40px 30px;
 }
 
@@ -200,10 +196,6 @@
   color: #574e4e;
   margin-top: 40px;
   display: none;
-}
-
-.perguntas-frequentes div:last-child {
-  margin-bottom: 80px;
 }
 
 .newsletter {
@@ -243,33 +235,29 @@
   border-left: none;
   border-right: none;
   padding-bottom: 10px;
-  margin: 40px 20px 0px 0px;
+  margin: 40px 30px 0px 0px;
 }
 
 .newsletter form input:last-child {
   font-size: 18px;
   line-height: 22px;
-  color: #F00F10;
+  color: #f00f10;
   border: none;
 }
 
 .fale-conosco {
-  background: #F9F7FF;
+  background: #f9f7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 140px 20px 80px 140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 140px 0px 80px 140px;
 }
 
-.fale-conosco div h3 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
-  color: #fa867e;
-  margin: 0px 0px 80px 0px;
+.fale-conosco div .form {
+  padding-top: 120px;
 }
 
 .fale-conosco div .form input {
@@ -277,12 +265,12 @@
   margin-bottom: 30px;
   width: 560px;
   height: 60px;
-  background: #F9E5EC;
+  background: #f9e5ec;
   border: none;
   border-radius: 5px;
   font-size: 18px;
   line-height: 22px;
-  color: #231F1F;
+  color: #231f1f;
   padding: 0px 20px;
 }
 
@@ -294,12 +282,12 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #231F1F;
-  border: 2px solid #F00F10;
+  color: #231f1f;
+  border: 2px solid #f00f10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
-  background: #F9F7FF;
+  background: #f9f7ff;
   width: 270px;
   margin-left: 290px;
 }
@@ -309,11 +297,11 @@
   height: 616px;
   -webkit-filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
           filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
-  margin-top: 120px;
+  margin-top: 180px;
 }
 
 .footer {
-  background: #FA867E;
+  background: #fa867e;
   height: 433px;
   padding: 120px 40px;
 }
@@ -333,7 +321,7 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
