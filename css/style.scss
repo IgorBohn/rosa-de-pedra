@@ -290,6 +290,20 @@
                 height: 286px;
                 
             }
+
+            .enviar {
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #231F1F;
+
+                border: 2px solid #F00F10;
+                box-sizing: border-box;
+                border-radius: 10px;
+                background: #F9F7FF;
+                width: 270px;
+                margin-left: 290px;
+            }
         }
     }
 
@@ -298,6 +312,6 @@
         width: 628px;
         height: 616px;
         filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
-
+        margin-top: 120px;
     }
 }
