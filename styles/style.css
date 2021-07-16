@@ -188,6 +188,27 @@
   padding: 140px 0px 80px 140px;
 }
 
+.perguntas-frequentes section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.perguntas-frequentes button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  margin-left: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .perguntas-frequentes div {
   border: 2px solid #f00f10;
   -webkit-box-sizing: border-box;
