@@ -345,3 +345,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 600px) {
+    .header, .main, .quemsomos, .produtos, .perguntas-frequentes, .newsletter, .faleconosco {
+        display: block;
+    }
+}
