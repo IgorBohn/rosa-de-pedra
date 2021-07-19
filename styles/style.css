@@ -38,26 +38,26 @@
           justify-content: space-between;
 }
 
-.header .logo {
+.header__logo {
   width: 147px;
   height: 73px;
 }
 
-.header .menu {
+.header__menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .menu a {
+.header__menu a {
   color: #fa867e;
   padding: 0px 40px;
   font-weight: 500;
   font-size: 16px;
 }
 
-.header .menu .h-fale-conosco {
+.header .menu__faleconosco {
   color: #f00f10;
   padding: 15px 40px;
   border: 2px solid #f00f10;
@@ -77,14 +77,14 @@
           justify-content: space-between;
 }
 
-.main div h1 {
+.main__title {
   font-weight: 700px;
   font-size: 74px;
   color: #fa867e;
   margin: 80px 60px 10px 140px;
 }
 
-.main div h1::after {
+.main__title::after {
   content: "";
   height: 6px;
   width: 6px;
@@ -93,19 +93,19 @@
   margin-left: 10px;
 }
 
-.main div a {
+.main__saibamais {
   font-weight: 700px;
   font-size: 16px;
   color: #f00f10;
   margin-left: 140px;
 }
 
-.main img {
+.main__img {
   width: 590px;
   height: 475px;
 }
 
-.quem-somos {
+.quemsomos {
   background: #f9f7ff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +118,7 @@
   overflow: hidden;
 }
 
-.quem-somos::before {
+.quemsomos::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -130,14 +130,14 @@
           clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
-.quem-somos div .paragrafo {
+.quemsomos__paragrafo {
   color: #574e4e;
   font-size: 18px;
   line-height: 35px;
   padding: 40px 140px 20px 0px;
 }
 
-.quem-somos img {
+.quemsomos__img {
   position: inherit;
   width: 429px;
   height: 601px;
@@ -156,17 +156,17 @@
   padding: 60px 0px 0px 140px;
 }
 
-.produtos .div-esquerda img {
+.produtos__img {
   width: 392px;
   height: 500px;
   margin: 120px 60px 140px 0px;
 }
 
-.produtos .div-direita {
+.produtos__div-direita {
   padding-top: 230px;
 }
 
-.produtos .div-direita h4 {
+.produtos__subtitle {
   font-weight: bold;
   font-size: 26px;
   line-height: 29px;
@@ -174,7 +174,7 @@
   margin: 20px 210px 20px 50px;
 }
 
-.produtos .div-direita .paragrafo {
+.produtos__paragrafo {
   font-weight: normal;
   font-size: 21px;
   line-height: 35px;
@@ -188,7 +188,7 @@
   padding: 140px 0px 80px 140px;
 }
 
-.perguntas-frequentes section {
+.perguntas-frequentes__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +197,16 @@
           justify-content: space-between;
 }
 
-.perguntas-frequentes button {
+.perguntas-frequentes__item {
+  border: 2px solid #f00f10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin: 30px 460px 0px 0px;
+  padding: 30px 60px 40px 30px;
+}
+
+.perguntas-frequentes__btn {
   cursor: pointer;
   border: none;
   outline: none;
@@ -209,23 +218,14 @@
   transition: 0.3s;
 }
 
-.perguntas-frequentes div {
-  border: 2px solid #f00f10;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
-  margin: 30px 460px 0px 0px;
-  padding: 30px 60px 40px 30px;
-}
-
-.perguntas-frequentes div .pergunta {
+.perguntas-frequentes__pergunta {
   font-weight: bold;
   font-size: 24px;
   line-height: 35px;
   color: #574e4e;
 }
 
-.perguntas-frequentes div .resposta {
+.perguntas-frequentes__resposta {
   font-weight: normal;
   font-size: 18px;
   line-height: 35px;
@@ -242,25 +242,25 @@
   padding: 80px 140px 40px 140px;
 }
 
-.newsletter div {
+.newsletter__title {
   margin-right: 140px;
 }
 
-.newsletter div p {
+.newsletter__title p {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
   color: #574e4e;
 }
 
-.newsletter div h3 {
+.newsletter__title h3 {
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
   color: #574e4e;
 }
 
-.newsletter form input {
+.newsletter__input {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
@@ -274,14 +274,14 @@
   margin: 40px 30px 0px 0px;
 }
 
-.newsletter form input:last-child {
+.newsletter__input:last-child {
   font-size: 18px;
   line-height: 22px;
   color: #f00f10;
   border: none;
 }
 
-.fale-conosco {
+.faleconosco {
   background: #f9f7ff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,11 +292,11 @@
   padding: 140px 0px 80px 140px;
 }
 
-.fale-conosco div .form {
+.faleconosco__form {
   padding-top: 120px;
 }
 
-.fale-conosco div .form input {
+.faleconosco__input {
   display: block;
   margin-bottom: 30px;
   width: 560px;
@@ -310,11 +310,11 @@
   padding: 0px 20px;
 }
 
-.fale-conosco div .form .mensagem {
+.faleconosco__mensagem {
   height: 286px;
 }
 
-.fale-conosco div .form .enviar {
+.faleconosco__enviar {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
@@ -328,7 +328,7 @@
   margin-left: 290px;
 }
 
-.fale-conosco img {
+.faleconosco__img {
   width: 628px;
   height: 616px;
   -webkit-filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
@@ -342,7 +342,7 @@
   padding: 120px 40px;
 }
 
-.footer div {
+.footer__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +352,7 @@
   margin-bottom: 40px;
 }
 
-.footer p {
+.footer__text {
   font-style: normal;
   font-size: 18px;
   line-height: 22px;

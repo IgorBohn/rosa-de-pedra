@@ -19,14 +19,16 @@
   <body>
     <!--------- Header ----------->
     <header class="header">
-      <a href="#" class="logo"><img src="img/logo.svg" alt="Logo" /></a>
+      <a class="header__logo" href="#" class="logo"
+        ><img src="img/logo.svg" alt="Logo"
+      /></a>
       <nav>
-        <ul class="menu">
+        <ul class="header__menu">
           <li><a href="#">início</a></li>
           <li><a href="#">Quem Somos</a></li>
           <li><a href="#">Produtos</a></li>
           <li><a href="#">Perguntas Frequêntes</a></li>
-          <li><a class="h-fale-conosco" href="#">Fale conosco →</a></li>
+          <li><a class="menu__faleconosco" href="#">Fale conosco →</a></li>
         </ul>
       </nav>
     </header>
@@ -34,24 +36,24 @@
     <!--------- Main ----------->
     <main class="main">
       <div>
-        <h1>SUCULENTAS</h1>
-        <a href="#">Saiba mais →</a>
+        <h1 class="main__title">SUCULENTAS</h1>
+        <a class="main__saibamais" href="#">Saiba mais →</a>
       </div>
-      <img src="img/planta-header.png" alt="Planta" />
+      <img class="main__img" src="img/planta-header.png" alt="Planta" />
     </main>
 
     <!--------- Quem Somos ----------->
-    <section class="quem-somos">
+    <section class="quemsomos">
       <div>
         <h3 class="title-section">Quem Somos</h3>
-        <p class="paragrafo">
+        <p class="quemsomos__paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
           Donec iaculis hendrerit odio in pellentesque. Quisque dictum mollis
           velit, eget malesuada eros porttitor eu.
         </p>
-        <p class="paragrafo">
+        <p class="quemsomos__paragrafo">
           Praesent sed vulputate nisi. Vivamus fringilla urna vel metus
           ullamcorper viverra. Nullam accumsan nisi velit, quis iaculis arcu
           tristique bibendum. Aenean a cursus arcu. Maecenas vitae semper ex.
@@ -61,25 +63,29 @@
           euismod id velit quis blandit. Donec sed viverra lorem.
         </p>
       </div>
-      <img src="img/planta-quem-somos.jpg" alt="Mulher cuidando de plantas" />
+      <img
+        class="quemsomos__img"
+        src="img/planta-quem-somos.jpg"
+        alt="Mulher cuidando de plantas"
+      />
     </section>
 
     <!--------- Produtos ----------->
     <section class="produtos">
-      <div class="div-esquerda">
+      <div>
         <h3 class="title-section">Produtos</h3>
-        <img src="img/planta-produtos.png" alt="Planta" />
+        <img class="produtos__img" src="img/planta-produtos.png" alt="Planta" />
       </div>
 
-      <div class="div-direita">
-        <h4>Conheça as Suculentas:</h4>
-        <p class="paragrafo">
+      <div class="produtos__div-direita">
+        <h4 class="produtos__subtitle">Conheça as Suculentas:</h4>
+        <p class="produtos__paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
         </p>
-        <h4>Como cuidar:</h4>
-        <p class="paragrafo">
+        <h4 class="produtos__subtitle">Como cuidar:</h4>
+        <p class="produtos__paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
@@ -91,21 +97,20 @@
     <section class="perguntas-frequentes">
       <h3 class="title-section">Perguntas Frequentes</h3>
 
-      <div>
-        <section>
-          <h4 class="pergunta">
+      <div class="perguntas-frequentes__item">
+        <div class="perguntas-frequentes__div">
+          <h4 class="perguntas-frequentes__pergunta">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
           </h4>
-          <button>
+          <button class="perguntas-frequentes__btn">
             <img
-            src="/img/arrow-perguntas-frequentes.svg"
-            alt="Seta para mostrar ou esconder resposta"
+              src="/img/arrow-perguntas-frequentes.svg"
+              alt="Seta para mostrar ou esconder resposta"
             />
           </button>
-          
-        </section>
+        </div>
 
-        <p class="resposta">
+        <p class="perguntas-frequentes__resposta">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
@@ -113,21 +118,20 @@
           sodales, diam non varius aliquam
         </p>
       </div>
-      <div>
-        <section>
-          <h4 class="pergunta">
+      <div class="perguntas-frequentes__item">
+        <div class="perguntas-frequentes__div">
+          <h4 class="perguntas-frequentes__pergunta">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
           </h4>
-          <button>
+          <button class="perguntas-frequentes__btn">
             <img
-            src="/img/arrow-perguntas-frequentes.svg"
-            alt="Seta para mostrar ou esconder resposta"
+              src="/img/arrow-perguntas-frequentes.svg"
+              alt="Seta para mostrar ou esconder resposta"
             />
           </button>
-          
-        </section>
+        </div>
 
-        <p class="resposta">
+        <p class="perguntas-frequentes__resposta">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
@@ -135,21 +139,20 @@
           sodales, diam non varius aliquam
         </p>
       </div>
-      <div>
-        <section>
-          <h4 class="pergunta">
+      <div class="perguntas-frequentes__item">
+        <div class="perguntas-frequentes__div">
+          <h4 class="perguntas-frequentes__pergunta">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
           </h4>
-          <button>
+          <button class="perguntas-frequentes__btn">
             <img
-            src="/img/arrow-perguntas-frequentes.svg"
-            alt="Seta para mostrar ou esconder resposta"
+              src="/img/arrow-perguntas-frequentes.svg"
+              alt="Seta para mostrar ou esconder resposta"
             />
           </button>
-          
-        </section>
+        </div>
 
-        <p class="resposta">
+        <p class="perguntas-frequentes__resposta">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
@@ -157,21 +160,20 @@
           sodales, diam non varius aliquam
         </p>
       </div>
-      <div>
-        <section>
-          <h4 class="pergunta">
+      <div class="perguntas-frequentes__item">
+        <div class="perguntas-frequentes__div">
+          <h4 class="perguntas-frequentes__pergunta">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
           </h4>
-          <button>
+          <button class="perguntas-frequentes__btn">
             <img
-            src="/img/arrow-perguntas-frequentes.svg"
-            alt="Seta para mostrar ou esconder resposta"
+              src="/img/arrow-perguntas-frequentes.svg"
+              alt="Seta para mostrar ou esconder resposta"
             />
           </button>
-          
-        </section>
+        </div>
 
-        <p class="resposta">
+        <p class="perguntas-frequentes__resposta">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           sodales, diam non varius aliquam, ex tellus porttitor justo, bibendum
           feugiat erat lorem in lacus. Etiam finibus pellentesque faucibus.
@@ -183,50 +185,81 @@
 
     <!--------- Newsletter ----------->
     <section class="newsletter">
-      <div>
+      <div class="newsletter__title">
         <p>Assine nossa</p>
         <h3>newsletter</h3>
       </div>
 
       <form>
-        <input type="text" placeholder="Nome" name="name" required />
-        <input type="text" placeholder="E-mail" name="mail" required />
-        <input type="submit" value="Cadastrar-se →" />
+        <input
+          class="newsletter__input"
+          type="text"
+          placeholder="Nome"
+          name="name"
+          required
+        />
+        <input
+          class="newsletter__input"
+          type="text"
+          placeholder="E-mail"
+          name="mail"
+          required
+        />
+        <input class="newsletter__input" type="submit" value="Cadastrar-se →" />
       </form>
     </section>
 
     <!--------- Fale Conosco ----------->
-    <section class="fale-conosco">
+    <section class="faleconosco">
       <div>
         <h3 class="title-section">Fale Conosco</h3>
-        <form class="form">
-          <input type="text" placeholder="Nome" name="name" required />
-          <input type="text" placeholder="E-mail" name="mail" required />
-          <input type="text" placeholder="Assunto" name="about" required />
+        <form class="faleconosco__form">
           <input
-            class="mensagem"
+            class="faleconosco__input"
+            type="text"
+            placeholder="Nome"
+            name="name"
+            required
+          />
+          <input
+            class="faleconosco__input"
+            type="text"
+            placeholder="E-mail"
+            name="mail"
+            required
+          />
+          <input
+            class="faleconosco__input"
+            type="text"
+            placeholder="Assunto"
+            name="about"
+            required
+          />
+          <input
+            class="faleconosco__input faleconosco__mensagem"
             type="text"
             placeholder="Mensagem"
             name="message"
             required
           />
 
-          <input class="enviar" type="submit" value="Enviar mensagem →" />
+          <input class="faleconosco__input faleconosco__enviar" type="submit" value="Enviar mensagem →" />
         </form>
       </div>
 
-      <img src="/img/planta-fale-conosco.png" alt="Planta" />
+      <img class="faleconosco__img" src="/img/planta-fale-conosco.png" alt="Planta" />
     </section>
 
     <!--------- Footer ----------->
     <footer class="footer">
-      <div>
-        <img src="/img/icones-redes-sociais.svg" alt="Redes Sociais" />
+      <div class="footer__div">
+        <img class="footer__img" src="/img/icones-redes-sociais.svg" alt="Redes Sociais" />
       </div>
 
-      <p>Rua Dona Francisca, 800</p>
-      <p>Ágora Tech Park, Sala X 2º Andar</p>
-      <p>Distrito Industrial, Perini Business Park</p>
+      <p class="footer__text">Rua Dona Francisca, 800</p>
+      <p class="footer__text">Ágora Tech Park, Sala X 2º Andar</p>
+      <p class="footer__text">Distrito Industrial, Perini Business Park</p>
     </footer>
+
   </body>
 </html>
