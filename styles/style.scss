@@ -66,12 +66,12 @@
     background: #fedce0;
     display: flex;
     justify-content: space-between;
+    padding: 80px 0px 0px 140px;
 
     &__title {
         font-weight: 700px;
         font-size: 74px;
         color: #fa867e;
-        margin: 80px 60px 10px 140px;
 
         &::after {
             content: "";
@@ -131,7 +131,6 @@
         width: 429px;
         height: 601px;
         border-radius: 30px;
-
         margin: 20px 40px 40px 80px;
     }
 }
@@ -142,7 +141,7 @@
     background: #fedce0;
     display: flex;
     justify-content: space-between;
-    padding: 60px 0px 0px 140px;
+    padding: 60px 0px 80px 140px;
 
     &__img {
         width: 392px;
@@ -167,7 +166,7 @@
         font-size: 21px;
         line-height: 35px;
         color: #574e4e;
-        margin: 20px 210px 20px 50px;
+        margin: 20px 210px 0px 50px;
     }
 }
 
@@ -346,7 +345,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1330px) {
     .header, .main, .quemsomos, .produtos, .perguntas-frequentes, .newsletter, .faleconosco {
         display: block;
     }
