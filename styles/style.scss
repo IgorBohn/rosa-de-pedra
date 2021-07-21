@@ -122,16 +122,30 @@
         color: #574e4e;
         font-size: 18px;
         line-height: 35px;
-
         padding: 40px 140px 20px 0px;
     }
 
     &__img {
-        position: inherit;
+        width: 100%;
+        position: relative;
         width: 429px;
         height: 601px;
         border-radius: 30px;
         margin: 20px 40px 40px 80px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border: 2px solid #FA867E;
+            right: 31px;
+            bottom: 22px;
+            border-radius: 30px;
+        }
+    }
+    img {
+        border-radius: 30px;
     }
 }
 

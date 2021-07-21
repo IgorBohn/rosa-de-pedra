@@ -138,11 +138,27 @@
 }
 
 .quemsomos__img {
-  position: inherit;
+  width: 100%;
+  position: relative;
   width: 429px;
   height: 601px;
   border-radius: 30px;
   margin: 20px 40px 40px 80px;
+}
+
+.quemsomos__img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #FA867E;
+  right: 31px;
+  bottom: 22px;
+  border-radius: 30px;
+}
+
+.quemsomos img {
+  border-radius: 30px;
 }
 
 .produtos {
