@@ -24,6 +24,15 @@
   margin-right: 10px;
 }
 
+.title-section::after {
+  content: attr(data-title);
+  font-weight: bold;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: rgba(250, 134, 126, 0.15);
+  margin-left: -160px;
+}
+
 .header {
   background: #fedce0;
   display: -webkit-box;
@@ -36,6 +45,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .header__logo {

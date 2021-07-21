@@ -6,6 +6,7 @@
     font-family: "Exo 2", sans-serif;
 }
 
+
 .title-section {
     font-style: normal;
     font-weight: normal;
@@ -22,7 +23,17 @@
         display: inline-block;
         margin-right: 10px;
     }
+
+    &::after {
+        content: attr(data-title);
+        font-weight: bold;
+        font-size: 80px;
+        text-transform: uppercase;
+        color: rgba(250, 134, 126, 0.15);
+        margin-left: -160px;
+    }
 }
+
 
 // Header //
 
@@ -32,6 +43,7 @@
     padding: 60px 120px;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     &__logo {
         width: 147px;
