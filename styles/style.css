@@ -13,6 +13,16 @@
   font-size: 32px;
   line-height: 38px;
   color: #fa867e;
+  /*
+    &::after {
+        content: attr(data-title);
+        font-weight: bold;
+        font-size: 80px;
+        text-transform: uppercase;
+        color: rgba(250, 134, 126, 0.15);
+        margin-left: -160px;
+    }
+    */
 }
 
 .title-section::before {
@@ -22,15 +32,6 @@
   background: #f00f10;
   display: inline-block;
   margin-right: 10px;
-}
-
-.title-section::after {
-  content: attr(data-title);
-  font-weight: bold;
-  font-size: 80px;
-  text-transform: uppercase;
-  color: rgba(250, 134, 126, 0.15);
-  margin-left: -160px;
 }
 
 .header {
