@@ -46,7 +46,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
 }
 
 .header__logo {
@@ -55,7 +54,7 @@
 }
 
 .header__menu {
-  list-style-type: none;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,10 +71,12 @@
   color: #f00f10;
   padding: 15px 40px;
   border: 2px solid #f00f10;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 10px;
   margin-left: 40px;
+}
+
+.header #btn-mobile {
+  display: none;
 }
 
 .main {
@@ -112,8 +113,15 @@
 }
 
 .main__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 590px;
   height: 475px;
+}
+
+.main img {
+  width: 100%;
 }
 
 .quemsomos {
@@ -162,7 +170,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 2px solid #FA867E;
+  border: 2px solid #fa867e;
   right: 31px;
   bottom: 22px;
   border-radius: 30px;
@@ -226,8 +234,6 @@
 
 .perguntas-frequentes__item {
   border: 2px solid #f00f10;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 10px;
   margin: 30px 460px 0px 0px;
   padding: 30px 60px 40px 30px;
@@ -389,8 +395,62 @@
 }
 
 @media (max-width: 1330px) {
-  .header, .main, .quemsomos, .produtos, .perguntas-frequentes, .newsletter, .faleconosco {
+  .header__menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    right: 0px;
+    background: #fedce0;
+    height: calc(100vh - 150px);
+    z-index: 1000;
+  }
+  .header__menu li {
+    margin: 20px 140px;
+  }
+  .header__menu .menu__faleconosco {
+    color: #fa867e;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    padding: 0px;
+  }
+  .header #btn-mobile {
     display: block;
+  }
+  #nav.active .header__menu {
+    display: block;
+  }
+}
+
+@media (max-width: 1205px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quemsomos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .produtos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .perguntas-frequentes {
+    padding: 100px 22px 50px 22px;
+  }
+  .perguntas-frequentes h3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .perguntas-frequentes__item {
+    margin: 30px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,8 @@
       <a class="header__logo" href="#" class="logo"
         ><img src="img/logo.svg" alt="Logo"
       /></a>
-      <nav>
+      <nav id="nav">
+        <button id="btn-mobile">Menu</button>
         <ul class="header__menu">
           <li><a href="#">início</a></li>
           <li><a href="#">Quem Somos</a></li>
@@ -39,7 +40,9 @@
         <h1 class="main__title">SUCULENTAS</h1>
         <a class="main__saibamais" href="#">Saiba mais →</a>
       </div>
-      <img class="main__img" src="img/planta-header.png" alt="Planta" />
+      <div class="main__img">
+        <img src="img/planta-header.png" alt="Planta" />
+      </div>
     </main>
 
     <!--------- Quem Somos ----------->
@@ -65,12 +68,8 @@
       </div>
 
       <div class="quemsomos__img">
-        <img
-        src="img/planta-quem-somos.jpg"
-        alt="Mulher cuidando de plantas"
-      />
+        <img src="img/planta-quem-somos.jpg" alt="Mulher cuidando de plantas" />
       </div>
-      
     </section>
 
     <!--------- Produtos ----------->
@@ -98,7 +97,9 @@
 
     <!--------- Perguntas Frequêntes ----------->
     <section class="perguntas-frequentes">
-      <h3 data-title="Perguntas Frequentes" class="title-section">Perguntas Frequentes</h3>
+      <h3 data-title="Perguntas Frequentes" class="title-section">
+        Perguntas Frequentes
+      </h3>
 
       <div class="perguntas-frequentes__item">
         <div class="perguntas-frequentes__div">
@@ -246,17 +247,29 @@
             required
           />
 
-          <input class="faleconosco__input faleconosco__enviar" type="submit" value="Enviar mensagem →" />
+          <input
+            class="faleconosco__input faleconosco__enviar"
+            type="submit"
+            value="Enviar mensagem →"
+          />
         </form>
       </div>
 
-      <img class="faleconosco__img" src="/img/planta-fale-conosco.png" alt="Planta" />
+      <img
+        class="faleconosco__img"
+        src="/img/planta-fale-conosco.png"
+        alt="Planta"
+      />
     </section>
 
     <!--------- Footer ----------->
     <footer class="footer">
       <div class="footer__div">
-        <img class="footer__img" src="/img/icones-redes-sociais.svg" alt="Redes Sociais" />
+        <img
+          class="footer__img"
+          src="/img/icones-redes-sociais.svg"
+          alt="Redes Sociais"
+        />
       </div>
 
       <p class="footer__text">Rua Dona Francisca, 800</p>
@@ -265,5 +278,6 @@
     </footer>
 
     <script src="/scripts/perguntas-frequentes.js"></script>
+    <script src="/scripts/menu-mobile.js"></script>
   </body>
 </html>

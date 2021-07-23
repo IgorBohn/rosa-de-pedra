@@ -6,7 +6,6 @@
     font-family: "Exo 2", sans-serif;
 }
 
-
 .title-section {
     font-style: normal;
     font-weight: normal;
@@ -35,7 +34,6 @@
     */
 }
 
-
 // Header //
 
 .header {
@@ -44,7 +42,6 @@
     padding: 60px 120px;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 
     &__logo {
         width: 147px;
@@ -52,7 +49,7 @@
     }
 
     &__menu {
-        list-style-type: none;
+        list-style: none;
         display: flex;
 
         a {
@@ -67,9 +64,12 @@
         color: #f00f10;
         padding: 15px 40px;
         border: 2px solid #f00f10;
-        box-sizing: border-box;
         border-radius: 10px;
         margin-left: 40px;
+    }
+
+    #btn-mobile {
+        display: none;
     }
 }
 
@@ -104,8 +104,13 @@
     }
 
     &__img {
+        display: flex;
         width: 590px;
         height: 475px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -151,7 +156,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            border: 2px solid #FA867E;
+            border: 2px solid #fa867e;
             right: 31px;
             bottom: 22px;
             border-radius: 30px;
@@ -211,7 +216,6 @@
 
     &__item {
         border: 2px solid #f00f10;
-        box-sizing: border-box;
         border-radius: 10px;
         margin: 30px 460px 0px 0px;
         padding: 30px 60px 40px 30px;
@@ -350,6 +354,8 @@
     }
 }
 
+// Footer //
+
 .footer {
     background: #fa867e;
     height: 433px;
@@ -372,8 +378,69 @@
     }
 }
 
+// Mobile //
+
 @media (max-width: 1330px) {
-    .header, .main, .quemsomos, .produtos, .perguntas-frequentes, .newsletter, .faleconosco {
-        display: block;
+    .header {
+        &__menu {
+            display: none;
+            //display: block;
+            position: absolute;
+            width: 100%;
+            top: 150px;
+            right: 0px;
+            background: #fedce0;
+            height: calc(100vh - 150px);
+            z-index: 1000;
+
+            li {
+                margin: 20px 140px;
+            }
+
+            .menu__faleconosco {
+                color: #fa867e;
+                font-weight: 500;
+                font-size: 16px;
+                border: none;
+                padding: 0px;
+            }
+        }
+
+        #btn-mobile {
+            display: block;
+        }
+
+        #nav.active &__menu {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 1205px) {
+
+    .main {
+        flex-direction: column;
+
+    }
+
+    .quemsomos {
+        flex-direction: column;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .perguntas-frequentes {
+        padding: 100px 22px 50px 22px;
+
+        h3 {
+            justify-self: center;
+        }
+
+        &__item {
+            margin: 30px 0px;
+        }
+
     }
 }
