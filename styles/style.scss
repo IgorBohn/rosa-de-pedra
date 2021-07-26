@@ -423,7 +423,6 @@ img {
 }
 
 @media (max-width: 1205px) {
-
     .main {
         flex-direction: column;
         padding: 80px 0px 0px 28px;
@@ -431,8 +430,6 @@ img {
         &__img {
             align-self: flex-end;
         }
-
-
     }
 
     .quemsomos {
@@ -446,14 +443,30 @@ img {
         }
 
         &__img {
-            margin: 60px 0px;
+            margin: 60px 0px 0px 0px;
         }
-        
-
     }
 
     .produtos {
         flex-direction: column;
+        padding: 70px 38px;
+        align-items: center;
+
+        &__img {
+            margin: 70px 0px 16px 0px;
+        }
+
+        &__div-direita {
+            padding: 0px;
+        }
+
+        &__subtitle {
+            margin: 16px 0px;
+        }
+
+        &__paragrafo {
+            margin: 0;
+        }
     }
 
     .perguntas-frequentes {
@@ -466,11 +479,25 @@ img {
         &__item {
             margin: 30px 0px;
         }
-
     }
 
     .newsletter {
         flex-direction: column;
+        padding: 22px 22px 70px 22px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__input {
+            margin: 40px 0px 0px 0px;
+        }
+
+        &__input:last-child {
+            align-self: flex-end;
+            margin-right: 10px;
+        }
     }
 
     .faleconosco {
