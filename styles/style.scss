@@ -6,10 +6,12 @@
     font-family: "Exo 2", sans-serif;
 }
 
+/*
 img {
     max-width: 100%;
     display: block;
 }
+*/
 
 .title-section {
     font-style: normal;
@@ -149,7 +151,6 @@ img {
     }
 
     &__img {
-        width: 100%;
         position: relative;
         width: 429px;
         height: 601px;
@@ -425,11 +426,30 @@ img {
 
     .main {
         flex-direction: column;
+        padding: 80px 0px 0px 28px;
+
+        &__img {
+            align-self: flex-end;
+        }
+
 
     }
 
     .quemsomos {
         flex-direction: column;
+        padding: 70px 38px 0px 38px;
+        align-items: center;
+
+        &__paragrafo {
+            padding: 0px;
+            margin: 30px 0px;
+        }
+
+        &__img {
+            margin: 60px 0px;
+        }
+        
+
     }
 
     .produtos {

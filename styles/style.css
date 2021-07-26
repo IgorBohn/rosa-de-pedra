@@ -7,11 +7,12 @@
   font-family: "Exo 2", sans-serif;
 }
 
+/*
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
-
+*/
 .title-section {
   font-style: normal;
   font-weight: normal;
@@ -162,7 +163,6 @@ img {
 }
 
 .quemsomos__img {
-  width: 100%;
   position: relative;
   width: 429px;
   height: 601px;
@@ -434,12 +434,28 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 80px 0px 0px 28px;
+  }
+  .main__img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .quemsomos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 70px 38px 0px 38px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quemsomos__paragrafo {
+    padding: 0px;
+    margin: 30px 0px;
+  }
+  .quemsomos__img {
+    margin: 60px 0px;
   }
   .produtos {
     -webkit-box-orient: vertical;
