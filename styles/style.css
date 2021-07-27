@@ -7,12 +7,6 @@
   font-family: "Exo 2", sans-serif;
 }
 
-/*
-img {
-    max-width: 100%;
-    display: block;
-}
-*/
 .title-section {
   font-style: normal;
   font-weight: normal;
@@ -115,13 +109,9 @@ img {
   font-weight: 700px;
   font-size: 16px;
   color: #f00f10;
-  margin-left: 140px;
 }
 
 .main__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 590px;
   height: 475px;
 }
@@ -138,7 +128,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 140px 0px 0px 140px;
+  padding: 140px 0px 0px 100px;
   position: relative;
   overflow: hidden;
 }
@@ -224,7 +214,6 @@ img {
 
 .perguntas-frequentes {
   background: #f9f7ff;
-  padding-bottom: 80px;
   padding: 140px 0px 80px 140px;
 }
 
@@ -251,7 +240,6 @@ img {
   width: 30px;
   height: 30px;
   background: transparent;
-  margin-left: 60px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -287,34 +275,30 @@ img {
 .newsletter__title p {
   font-weight: normal;
   font-size: 24px;
-  line-height: 29px;
   color: #574e4e;
 }
 
 .newsletter__title h3 {
   font-weight: bold;
   font-size: 32px;
-  line-height: 38px;
   color: #574e4e;
 }
 
 .newsletter__input {
   font-weight: normal;
   font-size: 18px;
-  line-height: 22px;
   color: #231f1f;
   background: #fedce0;
   border-bottom: 1px solid #231f1f;
   border-top: none;
   border-left: none;
   border-right: none;
-  padding-bottom: 10px;
+  padding: 10px;
   margin: 40px 30px 0px 0px;
 }
 
 .newsletter__input:last-child {
   font-size: 18px;
-  line-height: 22px;
   color: #f00f10;
   border: none;
 }
@@ -335,31 +319,28 @@ img {
 }
 
 .faleconosco__input {
-  display: block;
-  margin-bottom: 30px;
-  width: 560px;
-  height: 60px;
+  width: 100%;
   background: #f9e5ec;
   border: none;
   border-radius: 5px;
   font-size: 18px;
-  line-height: 22px;
   color: #231f1f;
-  padding: 0px 20px;
+  padding: 19px 0px 19px 20px;
+  margin-bottom: 30px;
 }
 
 .faleconosco__mensagem {
-  height: 286px;
+  min-height: 286px;
+  max-height: 286px;
+  min-width: 100%;
+  max-width: 560px;
 }
 
 .faleconosco__enviar {
   font-size: 18px;
-  line-height: 22px;
   text-align: center;
   color: #231f1f;
   border: 2px solid #f00f10;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 10px;
   background: #f9f7ff;
   width: 270px;
@@ -376,7 +357,6 @@ img {
 
 .footer {
   background: #fa867e;
-  height: 433px;
   padding: 120px 40px;
 }
 
@@ -393,38 +373,137 @@ img {
 .footer__text {
   font-style: normal;
   font-size: 18px;
-  line-height: 22px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1390px) {
+  .header {
+    padding: 29px 28px;
+  }
   .header__menu {
-    display: none;
+    display: block;
     position: absolute;
     width: 100%;
-    top: 150px;
+    top: 0px;
     right: 0px;
     background: #fedce0;
-    height: calc(100vh - 150px);
-    z-index: 1000;
+    height: 0px;
+    z-index: 100;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow: hidden;
   }
-  .header__menu li {
-    margin: 20px 140px;
+  .header li {
+    margin-bottom: 38px;
   }
-  .header__menu .menu__faleconosco {
+  .header a {
+    padding: 0px;
+  }
+  #nav.active .header__menu {
+    height: 100vh;
+    visibility: visible;
+    padding: 102px 40px;
+    -webkit-box-shadow: -10px 4px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: -10px 4px 20px rgba(0, 0, 0, 0.25);
+  }
+  .header .menu__faleconosco {
     color: #fa867e;
     font-weight: 500;
     font-size: 16px;
     border: none;
     padding: 0px;
+    margin: 0px;
   }
   .header #btn-mobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+    position: absolute;
+    top: 42px;
+    right: 24px;
+    z-index: 1000;
   }
-  #nav.active .header__menu {
+  .header #hamburguer {
     display: block;
+    width: 38px;
+    border-top: 6px solid #FA867E;
+  }
+  .header #hamburguer::after, .header #hamburguer::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 6px;
+    background: #FA867E;
+    margin-top: 5px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  .header #nav.active #hamburguer::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: -11px;
+  }
+  .header #nav.active #hamburguer::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .faleconosco {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 22px 92px 22px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faleconosco__form {
+    padding-top: 50px;
+  }
+  .faleconosco__enviar {
+    width: 100%;
+    margin: 0px;
+  }
+  .faleconosco__img {
+    display: none;
+  }
+  .quemsomos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 22px 0px 38px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quemsomos__paragrafo {
+    padding: 0px;
+    margin: 30px 0px;
+  }
+  .quemsomos__img {
+    margin: 60px 0px 0px 0px;
+    max-width: 298px;
+    max-height: 418px;
+  }
+  .quemsomos__img::before {
+    right: 21px;
+    bottom: 15px;
+  }
+  .quemsomos img {
+    width: 100%;
   }
 }
 
@@ -436,26 +515,14 @@ img {
             flex-direction: column;
     padding: 80px 0px 0px 28px;
   }
+  .main__title {
+    font-size: 32px;
+  }
   .main__img {
     -ms-flex-item-align: end;
         align-self: flex-end;
-  }
-  .quemsomos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 70px 38px 0px 38px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .quemsomos__paragrafo {
-    padding: 0px;
-    margin: 30px 0px;
-  }
-  .quemsomos__img {
-    margin: 60px 0px 0px 0px;
+    width: 304px;
+    height: 250px;
   }
   .produtos {
     -webkit-box-orient: vertical;
@@ -469,6 +536,8 @@ img {
   }
   .produtos__img {
     margin: 70px 0px 16px 0px;
+    max-width: 251px;
+    max-height: 320px;
   }
   .produtos__div-direita {
     padding: 0px;
@@ -488,6 +557,7 @@ img {
   }
   .perguntas-frequentes__item {
     margin: 30px 0px;
+    padding: 12px;
   }
   .newsletter {
     -webkit-box-orient: vertical;
@@ -512,12 +582,6 @@ img {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-right: 10px;
-  }
-  .faleconosco {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
