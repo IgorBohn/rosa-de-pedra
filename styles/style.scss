@@ -199,52 +199,45 @@
     }
 }
 
-// Perguntas Frequentes //
+// Perguntas Frequentes 2 //
 
-.perguntas-frequentes {
+.perguntas-frequentes2 {
     background: #f9f7ff;
-    padding: 140px 0px 80px 140px;
+    padding: 140px 140px 80px 140px;
 
-    &__div {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__item {
-        border: 2px solid #f00f10;
-        border-radius: 10px;
-        margin: 30px 460px 0px 0px;
-        padding: 30px 60px 40px 30px;
-    }
-
-    &__btn {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        width: 30px;
-        height: 30px;
-        background: transparent;
-
-        transition: 0.3s;
-    }
-
-    &__pergunta {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 35px;
-        color: #574e4e;
-    }
-
-    &__resposta {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 35px;
-        color: #574e4e;
-        margin-top: 40px;
-
-        display: none;
-    }
+    
+.item {
+    width: 100%;
+    border: 2px solid #f00f10;
+    border-radius: 10px;
+    padding: 30px 60px 40px 30px;
+  }
+  
+  .pergunta {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #574e4e;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    background-color: #f9f7ff;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resposta {
+    max-height: 0;
+    overflow: hidden;
+    
+    font-size: 18px;
+    line-height: 35px;
+    color: #574e4e;
+  }
+  
 }
+
 
 // Newsletter //
 
@@ -371,7 +364,7 @@
         &__menu {
             display: block;
             position: absolute;
-            width: 100%;
+            width: 80%;
             top: 0px;
             right: 0px;
             background: #fedce0;

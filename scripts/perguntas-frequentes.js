@@ -1,16 +1,15 @@
+const pergunta = document.querySelectorAll(".pergunta");
 
-var btn = document.querySelector('.perguntas-frequentes__btn');
+pergunta.forEach((pergunta) => {
+  pergunta.onclick = function () {
+    this.classList.toggle("is-open");
 
-var resposta = document.querySelector('.perguntas-frequentes__resposta');
+    let content = this.nextElementSibling;
 
-btn.addEventListener('click', function() {
-
-    if(resposta.style.display === 'block') {
-        resposta.style.display = 'none';
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
     }
-    else {
-        resposta.style.display = 'block';
-    }
-
+  };
 });
-
