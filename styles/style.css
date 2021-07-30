@@ -13,16 +13,6 @@
   font-size: 32px;
   line-height: 38px;
   color: #fa867e;
-  /*
-    &::after {
-        content: attr(data-title);
-        font-weight: bold;
-        font-size: 80px;
-        text-transform: uppercase;
-        color: rgba(250, 134, 126, 0.15);
-        margin-left: -160px;
-    }
-    */
 }
 
 .title-section::before {
@@ -133,6 +123,17 @@
   overflow: hidden;
 }
 
+.quemsomos .title-section:after {
+  content: attr(data-title);
+  font-weight: bold;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: rgba(250, 134, 126, 0.15);
+  position: relative;
+  left: -170px;
+  top: 15px;
+}
+
 .quemsomos::before {
   content: "";
   position: absolute;
@@ -186,6 +187,17 @@
   padding: 60px 0px 80px 140px;
 }
 
+.produtos .title-section:after {
+  content: attr(data-title);
+  font-weight: bold;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: rgba(250, 134, 126, 0.15);
+  position: relative;
+  left: -110px;
+  top: 20px;
+}
+
 .produtos__img {
   width: 392px;
   height: 500px;
@@ -212,9 +224,46 @@
   margin: 20px 210px 0px 50px;
 }
 
+.produtos__circulo1 {
+  width: 258px;
+  height: 258px;
+  border: 2px solid #fa867e;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+}
+
+.produtos__circulo2 {
+  width: 119px;
+  height: 119px;
+  border: 2px solid #fa867e;
+  border-radius: 50%;
+  position: absolute;
+  right: 195px;
+  top: 1750px;
+}
+
 .perguntas-frequentes {
   background: #f9f7ff;
   padding: 140px 140px 80px 140px;
+}
+
+.perguntas-frequentes .title-section {
+  margin-bottom: 100px;
+}
+
+.perguntas-frequentes .title-section:after {
+  content: attr(data-title);
+  font-weight: bold;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 75%;
+  color: rgba(250, 134, 126, 0.15);
+  position: relative;
+  display: inline-block;
+  max-width: 498px;
+  left: -305px;
+  top: 56px;
 }
 
 .perguntas-frequentes__item {
@@ -310,10 +359,31 @@
   margin: 40px 30px 0px 0px;
 }
 
+.newsletter__input:hover {
+  background: #f8ebf0;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.newsletter__input:focus {
+  background: #f8ebf0;
+  border: 2px solid #231f1f;
+  outline: none;
+  border-radius: 0px 5px 0px 0px;
+}
+
 .newsletter__input:last-child {
   font-size: 18px;
   color: #f00f10;
   border: none;
+  cursor: pointer;
+}
+
+.newsletter__input:last-child:hover {
+  background: #fedce0;
+}
+
+.newsletter__input:last-child:focus {
+  background: #fedce0;
 }
 
 .faleconosco {
@@ -324,11 +394,32 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 140px 0px 80px 140px;
+  padding: 130px 0px 80px 140px;
+}
+
+.faleconosco .title-section:after {
+  content: attr(data-title);
+  font-weight: bold;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: rgba(250, 134, 126, 0.15);
+  position: relative;
+  display: inline-block;
+  max-width: 362px;
+  left: -179px;
+  top: 56px;
 }
 
 .faleconosco__form {
   padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .faleconosco__input {
@@ -340,6 +431,18 @@
   color: #231f1f;
   padding: 19px 0px 19px 20px;
   margin-bottom: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faleconosco__input:hover {
+  background: #f5d2de;
+}
+
+.faleconosco__input:focus {
+  background: #f5d2de;
+  border: 2px solid #f00f10;
+  outline: none;
 }
 
 .faleconosco__mensagem {
@@ -357,7 +460,14 @@
   border-radius: 10px;
   background: #f9f7ff;
   width: 270px;
-  margin-left: 290px;
+  margin-left: 5s90px;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.faleconosco__enviar:hover {
+  background: #fa867e;
 }
 
 .faleconosco__img {
@@ -365,7 +475,7 @@
   height: 616px;
   -webkit-filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
           filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
-  margin-top: 180px;
+  margin: 180px 0px 0px 120px;
 }
 
 .footer {
@@ -391,7 +501,10 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 1390px) {
+@media (max-width: 1440px) {
+  .title-section {
+    font-size: 28px;
+  }
   .header {
     padding: 29px 28px;
   }
@@ -473,55 +586,6 @@
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
   }
-  .faleconosco {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 70px 22px 92px 22px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .faleconosco__form {
-    padding-top: 50px;
-  }
-  .faleconosco__enviar {
-    width: 100%;
-    margin: 0px;
-  }
-  .faleconosco__img {
-    display: none;
-  }
-  .quemsomos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 70px 22px 0px 38px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .quemsomos__paragrafo {
-    padding: 0px;
-    margin: 30px 0px;
-  }
-  .quemsomos__img {
-    margin: 60px 0px 0px 0px;
-    max-width: 298px;
-    max-height: 418px;
-  }
-  .quemsomos__img::before {
-    right: 21px;
-    bottom: 15px;
-  }
-  .quemsomos img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1205px) {
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -538,12 +602,64 @@
     width: 304px;
     height: 250px;
   }
+  .quemsomos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 30px 0px 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quemsomos .title-section:after {
+    font-size: 40px;
+    line-height: 37px;
+    display: inline-block;
+    left: 25px;
+    top: -36px;
+  }
+  .quemsomos__paragrafo {
+    padding: 0px;
+    margin: 30px 0px;
+  }
+  .quemsomos__img {
+    margin: 60px -8px 0px 8px;
+    max-width: 298px;
+    max-height: 418px;
+  }
+  .quemsomos__img::before {
+    right: 21px;
+    bottom: 15px;
+  }
+  .quemsomos img {
+    width: 100%;
+  }
   .produtos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 70px 38px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .produtos .title-section:after {
+    font-size: 40px;
+    line-height: 37px;
+    max-width: 181px;
+    left: -105px;
+    top: 5px;
+  }
+  .produtos__alinhamento-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -562,12 +678,23 @@
   .produtos__paragrafo {
     margin: 0;
   }
+  .produtos__circulo1, .produtos__circulo2 {
+    display: none;
+  }
   .perguntas-frequentes {
     padding: 100px 22px 50px 22px;
   }
-  .perguntas-frequentes h3 {
+  .perguntas-frequentes .title-section {
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-bottom: 0px;
+  }
+  .perguntas-frequentes .title-section:after {
+    font-size: 40px;
+    line-height: 37px;
+    max-width: 181px;
+    left: 28px;
+    top: -58px;
   }
   .perguntas-frequentes__item {
     width: 100%;
@@ -602,6 +729,33 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-right: 10px;
+  }
+  .faleconosco {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 22px 92px 22px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faleconosco .title-section:after {
+    font-size: 40px;
+    line-height: 37px;
+    max-width: 181px;
+    left: 28px;
+    top: -58px;
+  }
+  .faleconosco__form {
+    padding-top: 0px;
+  }
+  .faleconosco__enviar {
+    width: 100%;
+    margin: 0px;
+  }
+  .faleconosco__img {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

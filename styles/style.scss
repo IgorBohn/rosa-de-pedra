@@ -22,16 +22,6 @@
         display: inline-block;
         margin-right: 10px;
     }
-    /*
-    &::after {
-        content: attr(data-title);
-        font-weight: bold;
-        font-size: 80px;
-        text-transform: uppercase;
-        color: rgba(250, 134, 126, 0.15);
-        margin-left: -160px;
-    }
-    */
 }
 
 // Header //
@@ -123,6 +113,19 @@
     position: relative;
     overflow: hidden;
 
+    .title-section {
+        &:after {
+            content: attr(data-title);
+            font-weight: bold;
+            font-size: 80px;
+            text-transform: uppercase;
+            color: rgba(250, 134, 126, 0.15);
+            position: relative;
+            left: -170px;
+            top: 15px;
+        }
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -172,6 +175,20 @@
     justify-content: space-between;
     padding: 60px 0px 80px 140px;
 
+    .title-section {
+        // Ocorreu algum erro nas últimas modificações que colocou o ponto vermelho para cima
+        &:after {
+            content: attr(data-title);
+            font-weight: bold;
+            font-size: 80px;
+            text-transform: uppercase;
+            color: rgba(250, 134, 126, 0.15);
+            position: relative;
+            left: -110px;
+            top: 20px;
+        }
+    }
+
     &__img {
         width: 392px;
         height: 500px;
@@ -197,6 +214,26 @@
         color: #574e4e;
         margin: 20px 210px 0px 50px;
     }
+
+    // Não consegui colocar {right: -56px;} sem que criasse um scroll para o lado
+    &__circulo1 {
+        width: 258px;
+        height: 258px;
+        border: 2px solid #fa867e;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+    }
+
+    &__circulo2 {
+        width: 119px;
+        height: 119px;
+        border: 2px solid #fa867e;
+        border-radius: 50%;
+        position: absolute;
+        right: 195px;
+        top: 1750px;
+    }
 }
 
 // Perguntas Frequentes 2 //
@@ -204,6 +241,23 @@
 .perguntas-frequentes {
     background: #f9f7ff;
     padding: 140px 140px 80px 140px;
+
+    .title-section {
+        margin-bottom: 100px;
+        &:after {
+            content: attr(data-title);
+            font-weight: bold;
+            font-size: 80px;
+            text-transform: uppercase;
+            line-height: 75%;
+            color: rgba(250, 134, 126, 0.15);
+            position: relative;
+            display: inline-block;
+            max-width: 498px;
+            left: -305px;
+            top: 56px;
+        }
+    }
 
     &__item {
         display: grid;
@@ -244,7 +298,6 @@
         text-align: left;
         cursor: pointer;
         background-color: #f9f7ff;
-
     }
 
     .is-open {
@@ -288,15 +341,33 @@
         border-top: none;
         border-left: none;
         border-right: none;
-
         padding: 10px;
         margin: 40px 30px 0px 0px;
+
+        &:hover {
+            background: #f8ebf0;
+            border-radius: 0px 5px 0px 0px;
+        }
+
+        &:focus {
+            background: #f8ebf0;
+            border: 2px solid #231f1f;
+            outline: none;
+            border-radius: 0px 5px 0px 0px;
+        }
     }
 
     &__input:last-child {
         font-size: 18px;
         color: #f00f10;
         border: none;
+        cursor: pointer;
+        &:hover {
+            background: #fedce0;
+        }
+        &:focus {
+            background: #fedce0;
+        }
     }
 }
 
@@ -306,10 +377,29 @@
     background: #f9f7ff;
     display: flex;
     justify-content: space-between;
-    padding: 140px 0px 80px 140px;
+    padding: 130px 0px 80px 140px;
+
+    .title-section {
+        &:after {
+            content: attr(data-title);
+            font-weight: bold;
+            font-size: 80px;
+            text-transform: uppercase;
+            line-height: 60px;
+            color: rgba(250, 134, 126, 0.15);
+            position: relative;
+            display: inline-block;
+            max-width: 362px;
+            left: -179px;
+            top: 56px;
+        }
+    }
 
     &__form {
         padding-top: 120px;
+        // Coloquei o código abaixo para poder alinhar o botão de -Enviar Mensagem-, porém sem ele aparentava estar mais responsivo
+        display: flex;
+        flex-direction: column;
     }
 
     &__input {
@@ -321,6 +411,16 @@
         color: #231f1f;
         padding: 19px 0px 19px 20px;
         margin-bottom: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            background: #f5d2de;
+        }
+        &:focus {
+            background: #f5d2de;
+            border: 2px solid #f00f10;
+            outline: none;
+        }
     }
 
     &__mensagem {
@@ -339,14 +439,20 @@
         border-radius: 10px;
         background: #f9f7ff;
         width: 270px;
-        margin-left: 290px;
+        margin-left: 5s90px;
+        cursor: pointer;
+        align-self: flex-end;
+
+        &:hover {
+            background: #fa867e;
+        }
     }
 
     &__img {
         width: 628px;
         height: 616px;
         filter: drop-shadow(6px 4px 4px rgba(242, 73, 75, 0.15));
-        margin-top: 180px;
+        margin: 180px 0px 0px 120px;
     }
 }
 
@@ -374,7 +480,11 @@
 
 // Mobile //
 
-@media (max-width: 1390px) {
+@media (max-width: 1440px) {
+    .title-section {
+        font-size: 28px;
+    }
+
     .header {
         padding: 29px 28px;
 
@@ -465,53 +575,6 @@
         }
     }
 
-    .faleconosco {
-        flex-direction: column;
-        padding: 70px 22px 92px 22px;
-        align-items: center;
-
-        &__form {
-            padding-top: 50px;
-        }
-
-        &__enviar {
-            width: 100%;
-            margin: 0px;
-        }
-
-        &__img {
-            display: none;
-        }
-    }
-
-    .quemsomos {
-        flex-direction: column;
-        padding: 70px 22px 0px 38px;
-        align-items: center;
-
-        &__paragrafo {
-            padding: 0px;
-            margin: 30px 0px;
-        }
-
-        &__img {
-            margin: 60px 0px 0px 0px;
-            max-width: 298px;
-            max-height: 418px;
-
-            &::before {
-                right: 21px;
-                bottom: 15px;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-    }
-}
-
-@media (max-width: 1205px) {
     .main {
         flex-direction: column;
         padding: 80px 0px 0px 28px;
@@ -527,10 +590,62 @@
         }
     }
 
+    .quemsomos {
+        flex-direction: column;
+        padding: 70px 30px 0px 30px;
+        align-items: center;
+
+        .title-section {
+            &:after {
+                font-size: 40px;
+                line-height: 37px;
+                display: inline-block;
+                left: 25px;
+                top: -36px;
+            }
+        }
+
+        &__paragrafo {
+            padding: 0px;
+            margin: 30px 0px;
+        }
+
+        &__img {
+            margin: 60px -8px 0px 8px;
+            max-width: 298px;
+            max-height: 418px;
+
+            &::before {
+                right: 21px;
+                bottom: 15px;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
     .produtos {
         flex-direction: column;
         padding: 70px 38px;
         align-items: center;
+
+        .title-section {
+            &:after {
+                font-size: 40px;
+                line-height: 37px;
+                max-width: 181px;
+                left: -105px;
+                top: 5px;
+            }
+        }
+
+        &__alinhamento-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
 
         &__img {
             margin: 70px 0px 16px 0px;
@@ -549,13 +664,27 @@
         &__paragrafo {
             margin: 0;
         }
+
+        &__circulo1,
+        &__circulo2 {
+            display: none;
+        }
     }
 
     .perguntas-frequentes {
         padding: 100px 22px 50px 22px;
 
-        h3 {
+        .title-section {
             justify-self: center;
+            margin-bottom: 0px;
+
+            &:after {
+                font-size: 40px;
+                line-height: 37px;
+                max-width: 181px;
+                left: 28px;
+                top: -58px;
+            }
         }
 
         &__item {
@@ -586,6 +715,35 @@
         &__input:last-child {
             align-self: flex-end;
             margin-right: 10px;
+        }
+    }
+
+    .faleconosco {
+        flex-direction: column;
+        padding: 70px 22px 92px 22px;
+        align-items: center;
+
+        .title-section {
+            &:after {
+                font-size: 40px;
+                line-height: 37px;
+                max-width: 181px;
+                left: 28px;
+                top: -58px;
+            }
+        }
+
+        &__form {
+            padding-top: 0px;
+        }
+
+        &__enviar {
+            width: 100%;
+            margin: 0px;
+        }
+
+        &__img {
+            display: none;
         }
     }
 }
